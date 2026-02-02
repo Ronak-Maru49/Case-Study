@@ -27,8 +27,9 @@ body {
 }
 
 /* Banner Section */
-.blog-banner img {
+.blog-banner {
     height: 350px;
+    background: url('img/banner.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -171,7 +172,4 @@ body {
     .card img {
         height: 180px;
     }
-
 }
-
-
