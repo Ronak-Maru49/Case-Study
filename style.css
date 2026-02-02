@@ -27,7 +27,7 @@ body {
 }
 
 /* Banner Section */
-.blog-banner {
+.blog-banner img {
     height: 350px;
     background-size: cover;
     background-position: center;
@@ -173,4 +173,5 @@ body {
     }
 
 }
+
 
