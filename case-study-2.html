@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering System – Case Study</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" href="img/logo.jpg">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f6f8;
+            padding-top: 80px;
+        }
+
+        /* Navbar */
+        .navbar-brand img {
+            border-radius: 6px;
+        }
+
+        .navbar .nav-link {
+            font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link.active {
+            color: #212529 !important;
+            border-bottom: 2px solid #212529;
+        }
+
+        /* Banner */
+        .case-study-banner {
+            height: 380px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('img/c2.jpg') center/cover no-repeat;
+            color: #fff;
+        }
+
+        .case-study-banner p {
+            max-width: 720px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        /* Card */
+        .case-study-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        article h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            position: relative;
+            padding-left: 14px;
+            margin-top: 2.5rem;
+        }
+
+        article h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 4px;
+            height: 70%;
+            background: #212529;
+            border-radius: 2px;
+        }
+
+        article p,
+        article ul {
+            color: #495057;
+            line-height: 1.7;
+        }
+
+        article ul {
+            padding-left: 1.5rem;
+        }
+
+        article li {
+            margin-bottom: 8px;
+        }
+
+        /* Impact Cards */
+        .impact-card {
+            background: #f8f9fa;
+            padding: 32px;
+            border-radius: 14px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .impact-card h3 {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        .impact-card p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /*Footer*/
+        .footer {
+            margin-top: 80px;
+        }
+
+        .footer img {
+            border-radius: 90px;
+        }
+
+        .footer-link {
+            color: #cccccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-link:hover {
+            color: #101417;
+            text-decoration: underline;
+        }
+
+        .list-unstyled li a {
+            text-decoration: none;
+        }
+
+        .list-unstyled li a:hover {
+            font-style: normal;
+            color: #adb5bd;
+        }
+
+        .footer-link {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .social-links a {
+            background-color: #49494A;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+
+        @media (max-width: 768px) {
+            .case-study-banner {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" width="70">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search Case Study">
+                    <button class="btn btn-outline-dark">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="case-study-banner d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Online Food Ordering System</h1>
+            <p class="lead mt-3">
+                Streamlining Culinary Experiences with Digital Convenience
+            </p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <article class="case-study-card p-4 p-md-5">
+
+                        <h2>Overview</h2>
+                        <p>
+                            The Online Food Ordering System is a web-based platform that enables customers to
+                            browse menus, place orders, and track deliveries online. It also provides restaurants
+                            with an admin panel to manage orders, menus, and analytics efficiently.
+                        </p>
+
+                        <h2>The Challenge</h2>
+                        <ul>
+                            <li>Manual order handling via calls and walk-ins</li>
+                            <li>No real-time order tracking</li>
+                            <li>Inventory and order management issues</li>
+                            <li>Limited scalability during peak hours</li>
+                            <li>Poor customer engagement and feedback</li>
+                        </ul>
+
+                        <h2>The Solution</h2>
+                        <ul>
+                            <li>Responsive online menu and ordering system</li>
+                            <li>Secure online payments and order tracking</li>
+                            <li>Admin dashboard for restaurants</li>
+                            <li>Customer reviews and loyalty programs</li>
+                            <li>Email and SMS notifications</li>
+                        </ul>
+
+                        <h2>Implementation</h2>
+                        <p>
+                            The system was developed using HTML, CSS, JavaScript, PHP, and MySQL following a
+                            structured SDLC approach. Security, performance, and usability were key focus areas.
+                        </p>
+
+                        <h2>Results & Impact</h2>
+                        <div class="row g-4 my-4">
+                            <div class="col-md-4">
+                                <div class="impact-card">
+                                    <h3>35%</h3>
+                                    <p>Increase in Online Orders</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="impact-card">
+                                    <h3>60%</h3>
+                                    <p>Faster Order Processing</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="impact-card">
+                                    <h3>10,000+</h3>
+                                    <p>Monthly Active Customers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Conclusion</h2>
+                        <p>
+                            The Online Food Ordering System highlights how digital platforms can modernize
+                            restaurant operations and improve customer satisfaction. It provides a scalable
+                            foundation for future enhancements like AI recommendations and chatbot support.
+                        </p>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & About -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="img/logo.jpg" alt="Nature Blog Logo" width="60" class="mb-3">
+                    <p class="mb-3">
+                        Discover the wonders of nature with us. We bring you captivating stories, expert tips, and
+                        inspiration for exploring forests, oceans, mountains, and sustainable living.
+                    </p>
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzcwMDI0NDMzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&next"
+                            class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/home" class="text-white me-3" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white me-3" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" class="text-white" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Support Us</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i>Email: info@natureblog.com</p>
+                    <p class="mb-3"><i class="fas fa-phone me-2"></i>Phone: +91 98765 43210</p>
+                    <h6 class="mb-2">Subscribe to Our Newsletter</h6>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email"
+                            aria-label="Email for newsletter">
+                        <button class="btn " type="submit"
+                            style="background-color: #171718; color: white;">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Additional Info or Map (Optional) -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Visit Us</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Nature Lane, Green City, India</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d4a32f7b2b0!2sMelbourne%20CBD%2C%20Victoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1633072800000!5m2!1sen!2sus"
+                        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        aria-label="Location Map"></iframe>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <!-- Copyright -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 Nature Blog. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> for Nature Lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

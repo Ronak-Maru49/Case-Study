@@ -1,0 +1,175 @@
+/* Reset & Base */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 80px;
+    /* for fixed navbar */
+}
+
+/* Navbar */
+.navbar-brand img {
+    border-radius: 6px;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.navbar .nav-link.active {
+    color: #49494A !important;
+    border-bottom: 2px solid #49494A;
+}
+
+.d-flex button {
+    color: #212529;
+    border: 1px solid #212529;
+}
+
+/* Banner Section */
+.blog-banner {
+    height: 350px;
+    background: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-banner h1 {
+    letter-spacing: 1px;
+}
+
+.blog-banner p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.blog-banner a {
+    background-color: #101417;
+}
+
+.blog-banner a:hover {
+    background-color: #272727;
+}
+
+/* Case Study Cards */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-title a {
+    color: #212529;
+    font-weight: 600;
+}
+
+.card-title a:hover {
+    color: #212529;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: #212529;
+}
+
+.pagination .active .page-link {
+    background-color: #212529;
+    border-color: #212529;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #198754;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #157347;
+}
+
+/*Footer*/
+.footer {
+    margin-top: 80px;
+}
+
+.footer img {
+    border-radius: 90px;
+}
+
+.footer-link {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-link:hover {
+    color: #101417;
+    text-decoration: underline;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+}
+
+.list-unstyled li a:hover {
+    font-style: normal;
+    color: #adb5bd;
+}
+
+.footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.social-links a {
+    background-color: #49494A;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-banner {
+        height: 280px;
+        padding: 40px 0;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
